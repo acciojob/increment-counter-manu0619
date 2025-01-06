@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<p>0</p>
-	<button onclick=increment()>Increment</button>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+  <body>
+    <p>0</p>
+    <button onclick="increment()">Increment</button>
+    <!-- the entire body must be written by student -->
+    <script>
+      //your JS code here. If required.
+      let a = document.querySelector("p");
+      let count = 0;
+      function increment() {
+        alert(count);
+        count++;
+        a.textContent = count;
+        // alert();
+      }
+    </script>
+  </body>
 </html>
