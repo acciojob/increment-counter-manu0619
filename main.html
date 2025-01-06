@@ -6,12 +6,12 @@
   </head>
 
   <body>
-    <p>0</p>
-    <button onclick="increment()">Increment</button>
+    <p id="counter">0</p>
+    <button id="incrementBtn">Increment</button>
     <!-- the entire body must be written by student -->
     <script>
       //your JS code here. If required.
-      let a = document.querySelector("p");
+      let a = document.querySelector("#counter");
       let count = 0;
       function increment() {
         alert(count);
@@ -19,6 +19,9 @@
         a.textContent = count;
         // alert();
       }
+      document
+        .querySelector("#incrementBtn")
+        .addEventListener("click", increment);
     </script>
   </body>
 </html>
